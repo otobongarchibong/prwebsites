@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Post — Prwebsitedesign</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+      .wrap { max-width:700px; margin:0 auto; padding:4rem 1.5rem; }
+      .back { display:inline-block; margin-bottom:2rem; color:var(--muted); }
+      .wrap h1 { font-size:2.4rem; margin:0 0 .4rem; }
+      .wrap time { color:var(--muted); display:block; margin-bottom:2rem; }
+      .body { line-height:1.8; }
+      .body p { margin:0 0 1.2rem; }
+      .state { color:var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="back" href="/posts/">← All posts</a>
+      <p id="state" class="state">Loading…</p>
+      <article id="post" hidden>
+        <h1 id="title"></h1>
+        <time id="date"></time>
+        <div id="body" class="body"></div>
+      </article>
+    </div>
+    <script src="/posts/shared.js"></script>
+    <script>
+      const file = new URLSearchParams(location.search).get('file');
+      if (!file) {
+        document.getElementById('state').textContent = 'No post specified.';
+      } else {
+        fetchPost(file)
+          .then(({ data, body }) => {
+            document.getElementById('state').remove();
+            document.getElementById('title').textContent = data.title || file;
+            document.getElementById('date').textContent = data.date || '';
+            document.getElementById('body').innerHTML = marked.parse(body);
+            document.getElementById('post').hidden = false;
+          })
+          .catch((err) => (document.getElementById('state').textContent = 'Error: ' + err.message));
+      }
+    </script>
+  </body>
+</html>

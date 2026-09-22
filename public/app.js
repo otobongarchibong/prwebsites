@@ -1,6 +1,6 @@
 const dict = {
   en: {
-    search: 'Search', 'nav.docs': 'Docs', 'nav.showcase': 'Showcase', 'nav.resources': 'Resources ⌄',
+    search: 'Search', 'nav.blog': 'Blog', 'nav.docs': 'Docs', 'nav.showcase': 'Showcase', 'nav.resources': 'Resources ⌄',
     'hero.title': 'Websites, made right.',
     'hero.sub': 'Simple, modern, fast: beautiful websites for small businesses, nonprofits and creators.',
     'cta.what': 'What is Prwebsitedesign?', 'cta.showcase': 'Showcase', 'cta.start': 'Get Started',
@@ -47,7 +47,7 @@ const dict = {
     'q11': "Have just moved our old site over and it was very easy. Very impressed so far, everything feels faster and cleaner than before.",
   },
   es: {
-    search: 'Buscar', 'nav.docs': 'Documentos', 'nav.showcase': 'Portafolio', 'nav.resources': 'Recursos ⌄',
+    search: 'Buscar', 'nav.blog': 'Blog', 'nav.docs': 'Documentos', 'nav.showcase': 'Portafolio', 'nav.resources': 'Recursos ⌄',
     'hero.title': 'Sitios web, bien hechos.',
     'hero.sub': 'Simples, modernos y rápidos: sitios web hermosos para pequeños negocios, organizaciones y creadores.',
     'cta.what': '¿Qué es Prwebsitedesign?', 'cta.showcase': 'Portafolio', 'cta.start': 'Comenzar',

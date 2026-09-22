@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog — Prwebsitedesign</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .wrap { max-width:800px; margin:0 auto; padding:4rem 1.5rem; }
+      .wrap h1 { font-size:2.2rem; margin:0 0 2rem; }
+      .postlist { display:grid; gap:1rem; list-style:none; padding:0; margin:0; }
+      .postlist li { border:1px solid #2e3034; border-radius:12px; padding:1.2rem 1.4rem; }
+      .postlist a { font-size:1.1rem; font-weight:600; }
+      .postlist time { display:block; color:var(--muted); font-size:.85rem; margin-top:.3rem; }
+      .state { color:var(--muted); }
+      .back { display:inline-block; margin-bottom:2rem; color:var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a class="back" href="/">← Back home</a>
+      <h1>Blog</h1>
+      <p id="state" class="state">Loading posts…</p>
+      <ul id="list" class="postlist"></ul>
+    </div>
+    <script src="/posts/shared.js"></script>
+    <script>
+      fetchPostList()
+        .then((posts) => {
+          document.getElementById('state').remove();
+          const list = document.getElementById('list');
+          if (!posts.length) {
+            list.outerHTML = '<p class="state">No posts yet. Create one in the <a href="/dashboard">dashboard</a>.</p>';
+            return;
+          }
+          list.innerHTML = posts
+            .map(
+              (p) =>
+                `<li><a href="/posts/post.html?file=${encodeURIComponent(p.file)}">${p.title}</a><time>${p.date}</time></li>`
+            )
+            .join('');
+        })
+        .catch((err) => (document.getElementById('state').textContent = 'Error: ' + err.message));
+    </script>
+  </body>
+</html>
