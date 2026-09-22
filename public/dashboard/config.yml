@@ -6,6 +6,57 @@ backend:
 media_folder: /public/media
 public_folder: /media
 
+singletons:
+  - name: home
+    label: Homepage
+    file: /content/home.yaml
+    icon: home
+    fields:
+      - name: hero
+        label: Hero
+        widget: object
+        fields:
+          - { label: Title (EN), name: title_en, widget: string }
+          - { label: Title (ES), name: title_es, widget: string }
+          - { label: Subtitle (EN), name: subtitle_en, widget: text }
+          - { label: Subtitle (ES), name: subtitle_es, widget: text }
+          - { label: Primary Button (EN), name: cta_primary_en, widget: string }
+          - { label: Primary Button (ES), name: cta_primary_es, widget: string }
+          - { label: Secondary Button (EN), name: cta_secondary_en, widget: string }
+          - { label: Secondary Button (ES), name: cta_secondary_es, widget: string }
+          - { label: Tertiary Button (EN), name: cta_tertiary_en, widget: string }
+          - { label: Tertiary Button (ES), name: cta_tertiary_es, widget: string }
+      - name: features
+        label: Feature Cards
+        widget: list
+        summary: "{{title_en}}"
+        fields:
+          - { label: Icon (emoji), name: icon, widget: string }
+          - { label: Title (EN), name: title_en, widget: string }
+          - { label: Title (ES), name: title_es, widget: string }
+          - { label: Description (EN), name: description_en, widget: text }
+          - { label: Description (ES), name: description_es, widget: text }
+      - name: testimonials
+        label: Testimonials
+        widget: list
+        summary: "{{name}}"
+        fields:
+          - { label: Client Name, name: name, widget: string }
+          - { label: Handle, name: handle, widget: string }
+          - { label: Avatar, name: avatar, widget: image }
+          - { label: Quote (EN), name: quote_en, widget: text }
+          - { label: Quote (ES), name: quote_es, widget: text }
+      - name: cta
+        label: Bottom Call to Action
+        widget: object
+        fields:
+          - { label: Heading (EN), name: heading_en, widget: string }
+          - { label: Heading (ES), name: heading_es, widget: string }
+          - { label: Button (EN), name: button_en, widget: string }
+          - { label: Button (ES), name: button_es, widget: string }
+      - { label: Footer Text (EN), name: footer_en, widget: string }
+      - { label: Footer Text (ES), name: footer_es, widget: string }
+
 collections:
   - name: posts
     label: Posts

@@ -1,97 +1,20 @@
+// UI chrome strings only (nav, search, language switch). Page content
+// (hero, features, testimonials, footer) is loaded live from the CMS —
+// see home-content.js.
 const dict = {
   en: {
-    search: 'Search', 'nav.blog': 'Blog', 'nav.docs': 'Docs', 'nav.showcase': 'Showcase', 'nav.resources': 'Resources ⌄',
-    'hero.title': 'Websites, made right.',
-    'hero.sub': 'Simple, modern, fast: beautiful websites for small businesses, nonprofits and creators.',
-    'cta.what': 'What is Prwebsitedesign?', 'cta.showcase': 'Showcase', 'cta.start': 'Get Started',
-    'f1.t': "Fast Launch",
-    'f1.d': "Your site live in days, not months, with a clear process from first call to launch.",
-    'f2.t': "Hassle-Free Hosting",
-    'f2.d': "We handle domains, hosting and updates, so there are no servers or tech headaches for you.",
-    'f3.t': "Modern & Intuitive Design",
-    'f3.d': "Clean, user-friendly layouts with polished details and full mobile support.",
-    'f4.t': "Easy Content Editing",
-    'f4.d': "Update text, photos and pages yourself with a simple visual editor.",
-    'f5.t': "Bilingual Ready",
-    'f5.d': "Built-in English and Spanish versions so you can reach more customers.",
-    'f6.t': "Works Anywhere",
-    'f6.d': "Fits your existing tools, from plain HTML to Next.js and beyond.",
-    'f7.t': "Built to Last",
-    'f7.d': "Clean code, documentation, SEO basics and performance tuned from day one.",
-    'f8.t': "Real Results",
-    'f8.d': "A growing portfolio of real-world sites for local businesses, updated often.",
-    'p1.t': "Modern Websites<br>Made Right",
-    'p2.a': "Fast &amp; Lightweight",
-    'p2.b': "Modern UX/UI<br>on Every Device",
-    'p3.t': "Photo &amp; Media Integration",
-    'p4.a': "Full-Fledged Media Library",
-    'p4.b': "First-Class Bilingual Support",
-    'p5.a': "Built-In Image Optimization",
-    'p5.b': "Mobile &amp; Tablet Support",
-    'p6.a': "Streamlined Workflow<br>from Idea to Launch",
-    'p6.b': "Easy Migration from<br>Your Current Site",
-    'love.t': "Clients Love Prwebsitedesign",
-    'act.t': "See It in Action",
-    'act.b': "Visit Showcase",
-    'foot': "Copyright © 2026 Prwebsitedesign",
-    'q1': "Our new site went live in under a week. Customers find our menu instantly and orders are up. The whole process felt effortless, and I never had to touch any code.",
-    'q2': "Finally a portfolio that looks as good as my work. Fast, clean, and the Spanish version brought in a whole new set of clients.",
-    'q3': "I was skeptical about switching agencies, but Prwebsitedesign delivered exactly what we described and then some. Communication was great from start to finish.",
-    'q4': "Among other things, the site loads incredibly fast on mobile. Definitely recommended if you want something simple that just works.",
-    'q5': "Been working with the team for a few months now and I love it. Thanks for making my firm look this professional. Every request gets handled quickly.",
-    'q6': "They nailed the design and the details. Best small-business web team I have worked with, and very grateful they take on projects our size.",
-    'q7': "Our gym site is now easy to update and looks fantastic on every phone. Members keep telling us how smooth booking is.",
-    'q8': "The bilingual site is a game changer for our café. Tourists and locals both feel at home. This might be what finally gets us more online orders.",
-    'q9': "Just launched our new site and could not be happier. A couple of small tweaks and everything was sorted in a day. Thanks for the awesome work!",
-    'q10': "Honestly my favorite agency experience so far. Quick, simple, and they actually listen. Happy this team exists and fits my needs perfectly.",
-    'q11': "Have just moved our old site over and it was very easy. Very impressed so far, everything feels faster and cleaner than before.",
+    search: 'Search',
+    'nav.blog': 'Blog',
+    'nav.docs': 'Docs',
+    'nav.showcase': 'Showcase',
+    'nav.resources': 'Resources ⌄',
   },
   es: {
-    search: 'Buscar', 'nav.blog': 'Blog', 'nav.docs': 'Documentos', 'nav.showcase': 'Portafolio', 'nav.resources': 'Recursos ⌄',
-    'hero.title': 'Sitios web, bien hechos.',
-    'hero.sub': 'Simples, modernos y rápidos: sitios web hermosos para pequeños negocios, organizaciones y creadores.',
-    'cta.what': '¿Qué es Prwebsitedesign?', 'cta.showcase': 'Portafolio', 'cta.start': 'Comenzar',
-    'f1.t': "Lanzamiento rápido",
-    'f1.d': "Tu sitio en línea en días, no meses, con un proceso claro desde la primera llamada.",
-    'f2.t': "Hosting sin complicaciones",
-    'f2.d': "Nos encargamos de dominios, hosting y actualizaciones, sin servidores ni dolores de cabeza.",
-    'f3.t': "Diseño moderno e intuitivo",
-    'f3.d': "Diseños limpios y fáciles de usar, con detalles pulidos y soporte móvil completo.",
-    'f4.t': "Edición de contenido fácil",
-    'f4.d': "Actualiza textos, fotos y páginas tú mismo con un editor visual sencillo.",
-    'f5.t': "Listo para dos idiomas",
-    'f5.d': "Versiones en inglés y español incluidas para llegar a más clientes.",
-    'f6.t': "Funciona en cualquier lugar",
-    'f6.d': "Se adapta a tus herramientas actuales, desde HTML simple hasta Next.js y más.",
-    'f7.t': "Hecho para durar",
-    'f7.d': "Código limpio, documentación, SEO básico y rendimiento optimizado desde el primer día.",
-    'f8.t': "Resultados reales",
-    'f8.d': "Un portafolio creciente de sitios reales para negocios locales, actualizado a menudo.",
-    'p1.t': "Sitios web modernos<br>bien hechos",
-    'p2.a': "Rápido y ligero",
-    'p2.b': "UX/UI moderno<br>en cada dispositivo",
-    'p3.t': "Integración de fotos y medios",
-    'p4.a': "Biblioteca de medios completa",
-    'p4.b': "Soporte bilingüe de primera",
-    'p5.a': "Optimización de imágenes integrada",
-    'p5.b': "Compatible con móvil y tableta",
-    'p6.a': "Flujo de trabajo simple<br>de la idea al lanzamiento",
-    'p6.b': "Migración fácil desde<br>tu sitio actual",
-    'love.t': "A los clientes les encanta Prwebsitedesign",
-    'act.t': "Míralo en acción",
-    'act.b': "Ver portafolio",
-    'foot': "Derechos reservados © 2026 Prwebsitedesign",
-    'q1': "Nuestro nuevo sitio salió en menos de una semana. Los clientes encuentran el menú al instante y los pedidos subieron. Todo el proceso fue sencillo y nunca tuve que tocar código.",
-    'q2': "Por fin un portafolio que se ve tan bien como mi trabajo. Rápido, limpio, y la versión en español trajo clientes nuevos.",
-    'q3': "Dudaba en cambiar de agencia, pero Prwebsitedesign entregó justo lo que pedimos y más. La comunicación fue excelente de principio a fin.",
-    'q4': "Entre otras cosas, el sitio carga rapidísimo en el móvil. Muy recomendado si quieres algo simple que simplemente funcione.",
-    'q5': "Llevo unos meses trabajando con el equipo y me encanta. Gracias por hacer que mi firma se vea tan profesional. Cada solicitud se atiende rápido.",
-    'q6': "Acertaron con el diseño y los detalles. El mejor equipo web para pequeños negocios con el que he trabajado, y agradezco que atiendan proyectos de nuestro tamaño.",
-    'q7': "El sitio de nuestro gimnasio ahora es fácil de actualizar y se ve genial en cualquier teléfono. Los miembros dicen que reservar es muy fácil.",
-    'q8': "El sitio bilingüe cambió todo para nuestro café. Turistas y locales se sienten en casa. Esto podría ser lo que por fin nos traiga más pedidos en línea.",
-    'q9': "Acabamos de lanzar nuestro nuevo sitio y estamos felices. Unos pequeños ajustes y todo quedó listo en un día. ¡Gracias por el excelente trabajo!",
-    'q10': "Sinceramente mi mejor experiencia con una agencia. Rápidos, simples y realmente escuchan. Me alegra que este equipo exista y se ajuste a lo que necesito.",
-    'q11': "Acabamos de mover nuestro sitio anterior y fue muy fácil. Muy impresionado hasta ahora, todo se siente más rápido y limpio que antes.",
+    search: 'Buscar',
+    'nav.blog': 'Blog',
+    'nav.docs': 'Documentos',
+    'nav.showcase': 'Portafolio',
+    'nav.resources': 'Recursos ⌄',
   },
 };
 
@@ -99,10 +22,17 @@ function setLang(lang) {
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-i18n]').forEach((el) => (el.innerHTML = dict[lang][el.dataset.i18n]));
   document.querySelectorAll('[data-lang]').forEach((b) => b.classList.toggle('active', b.dataset.lang === lang));
-  try { localStorage.setItem('lang', lang); } catch {}
+  if (window.renderHomeContent) window.renderHomeContent(lang);
+  try {
+    localStorage.setItem('lang', lang);
+  } catch {}
 }
 
 document.querySelectorAll('[data-lang]').forEach((b) => b.addEventListener('click', () => setLang(b.dataset.lang)));
+
 let saved = 'en';
-try { saved = localStorage.getItem('lang') || 'en'; } catch {}
+try {
+  saved = localStorage.getItem('lang') || 'en';
+} catch {}
+window.currentLang = saved;
 setLang(saved);

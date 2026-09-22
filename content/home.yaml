@@ -1,0 +1,119 @@
+hero:
+  title_en: Websites, made right.
+  title_es: Sitios web, bien hechos.
+  subtitle_en: "Simple, modern, fast: beautiful websites for small businesses, nonprofits and creators."
+  subtitle_es: "Simples, modernos y rápidos: sitios web hermosos para pequeños negocios, organizaciones y creadores."
+  cta_primary_en: What is Prwebsitedesign?
+  cta_primary_es: "¿Qué es Prwebsitedesign?"
+  cta_secondary_en: Showcase
+  cta_secondary_es: Portafolio
+  cta_tertiary_en: Get Started
+  cta_tertiary_es: Comenzar
+
+features:
+  - icon: "🚀"
+    title_en: Fast Launch
+    title_es: Lanzamiento rápido
+    description_en: Your site live in days, not months, with a clear process from first call to launch.
+    description_es: Tu sitio en línea en días, no meses, con un proceso claro desde la primera llamada.
+  - icon: "🎈"
+    title_en: Hassle-Free Hosting
+    title_es: Hosting sin complicaciones
+    description_en: We handle domains, hosting and updates, so there are no servers or tech headaches for you.
+    description_es: Nos encargamos de dominios, hosting y actualizaciones, sin servidores ni dolores de cabeza.
+  - icon: "🎨"
+    title_en: Modern & Intuitive Design
+    title_es: Diseño moderno e intuitivo
+    description_en: Clean, user-friendly layouts with polished details and full mobile support.
+    description_es: Diseños limpios y fáciles de usar, con detalles pulidos y soporte móvil completo.
+  - icon: "🖼️"
+    title_en: Easy Content Editing
+    title_es: Edición de contenido fácil
+    description_en: Update text, photos and pages yourself with a simple visual editor.
+    description_es: Actualiza textos, fotos y páginas tú mismo con un editor visual sencillo.
+  - icon: "🌐"
+    title_en: Bilingual Ready
+    title_es: Listo para dos idiomas
+    description_en: Built-in English and Spanish versions so you can reach more customers.
+    description_es: Versiones en inglés y español incluidas para llegar a más clientes.
+  - icon: "🧩"
+    title_en: Works Anywhere
+    title_es: Funciona en cualquier lugar
+    description_en: Fits your existing tools, from plain HTML to Next.js and beyond.
+    description_es: Se adapta a tus herramientas actuales, desde HTML simple hasta Next.js y más.
+  - icon: "🛠️"
+    title_en: Built to Last
+    title_es: Hecho para durar
+    description_en: Clean code, documentation, SEO basics and performance tuned from day one.
+    description_es: Código limpio, documentación, SEO básico y rendimiento optimizado desde el primer día.
+  - icon: "🔥"
+    title_en: Real Results
+    title_es: Resultados reales
+    description_en: A growing portfolio of real-world sites for local businesses, updated often.
+    description_es: Un portafolio creciente de sitios reales para negocios locales, actualizado a menudo.
+
+testimonials:
+  - name: Maria Delgado
+    handle: "@delgadobakery.com"
+    avatar: /avatars/1.jpg
+    quote_en: Our new site went live in under a week. Customers find our menu instantly and orders are up. The whole process felt effortless, and I never had to touch any code.
+    quote_es: Nuestro nuevo sitio salió en menos de una semana. Los clientes encuentran el menú al instante y los pedidos subieron. Todo el proceso fue sencillo y nunca tuve que tocar código.
+  - name: Alex Rivera
+    handle: "@riveraphoto.co"
+    avatar: /avatars/2.jpg
+    quote_en: Finally a portfolio that looks as good as my work. Fast, clean, and the Spanish version brought in a whole new set of clients.
+    quote_es: Por fin un portafolio que se ve tan bien como mi trabajo. Rápido, limpio, y la versión en español trajo clientes nuevos.
+  - name: Jordan Blake
+    handle: "@blakeconsulting.io"
+    avatar: /avatars/3.jpg
+    quote_en: I was skeptical about switching agencies, but Prwebsitedesign delivered exactly what we described and then some. Communication was great from start to finish.
+    quote_es: Dudaba en cambiar de agencia, pero Prwebsitedesign entregó justo lo que pedimos y más. La comunicación fue excelente de principio a fin.
+  - name: Sofia Marín
+    handle: "@marinstudio.es"
+    avatar: /avatars/4.jpg
+    quote_en: Among other things, the site loads incredibly fast on mobile. Definitely recommended if you want something simple that just works.
+    quote_es: Entre otras cosas, el sitio carga rapidísimo en el móvil. Muy recomendado si quieres algo simple que simplemente funcione.
+  - name: Daniel Okafor
+    handle: "@okaforlegal.com"
+    avatar: /avatars/5.jpg
+    quote_en: Been working with the team for a few months now and I love it. Thanks for making my firm look this professional. Every request gets handled quickly.
+    quote_es: Llevo unos meses trabajando con el equipo y me encanta. Gracias por hacer que mi firma se vea tan profesional. Cada solicitud se atiende rápido.
+  - name: Emily Chen
+    handle: "@chenceramics.shop"
+    avatar: /avatars/6.jpg
+    quote_en: They nailed the design and the details. Best small-business web team I have worked with, and very grateful they take on projects our size.
+    quote_es: Acertaron con el diseño y los detalles. El mejor equipo web para pequeños negocios con el que he trabajado, y agradezco que atiendan proyectos de nuestro tamaño.
+  - name: Marcus Hill
+    handle: "@hillfitness.fit"
+    avatar: /avatars/7.jpg
+    quote_en: Our gym site is now easy to update and looks fantastic on every phone. Members keep telling us how smooth booking is.
+    quote_es: El sitio de nuestro gimnasio ahora es fácil de actualizar y se ve genial en cualquier teléfono. Los miembros dicen que reservar es muy fácil.
+  - name: Lucía Herrera
+    handle: "@herreracafe.mx"
+    avatar: /avatars/8.jpg
+    quote_en: The bilingual site is a game changer for our café. Tourists and locals both feel at home. This might be what finally gets us more online orders.
+    quote_es: El sitio bilingüe cambió todo para nuestro café. Turistas y locales se sienten en casa. Esto podría ser lo que por fin nos traiga más pedidos en línea.
+  - name: Tom Whitaker
+    handle: "@whitakerbuilds.com"
+    avatar: /avatars/9.jpg
+    quote_en: Just launched our new site and could not be happier. A couple of small tweaks and everything was sorted in a day. Thanks for the awesome work!
+    quote_es: Acabamos de lanzar nuestro nuevo sitio y estamos felices. Unos pequeños ajustes y todo quedó listo en un día. ¡Gracias por el excelente trabajo!
+  - name: Amara Osei
+    handle: "@amaradesigns.co"
+    avatar: /avatars/10.jpg
+    quote_en: Honestly my favorite agency experience so far. Quick, simple, and they actually listen. Happy this team exists and fits my needs perfectly.
+    quote_es: Sinceramente mi mejor experiencia con una agencia. Rápidos, simples y realmente escuchan. Me alegra que este equipo exista y se ajuste a lo que necesito.
+  - name: Ben Carter
+    handle: "@cartercoffee.co"
+    avatar: /avatars/11.jpg
+    quote_en: Have just moved our old site over and it was very easy. Very impressed so far, everything feels faster and cleaner than before.
+    quote_es: Acabamos de mover nuestro sitio anterior y fue muy fácil. Muy impresionado hasta ahora, todo se siente más rápido y limpio que antes.
+
+cta:
+  heading_en: See It in Action
+  heading_es: Míralo en acción
+  button_en: Visit Showcase
+  button_es: Ver portafolio
+
+footer_en: Copyright © 2026 Prwebsitedesign
+footer_es: Derechos reservados © 2026 Prwebsitedesign
